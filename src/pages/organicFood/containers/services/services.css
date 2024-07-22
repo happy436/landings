@@ -1,0 +1,103 @@
+.organicFood__services {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 40px;
+    transition: all 0.3s;
+}
+
+.organicFood__services_circle {
+    width: 1200px;
+    height: 1200px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -400px;
+    right: -550px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease-in-out;
+}
+
+.organicFood__services_circle.fullscreen {
+    width: 5000px;
+    height: 5000px;
+    top: -2500px;
+    right: -2550px;
+}
+
+.organicFood__services_bgText {
+    position: absolute;
+    font-size: 300px;
+    font-weight: bold;
+    opacity: 0.2;
+    z-index: 0;
+    left: 1.25rem;
+}
+
+.organicFood__services_info {
+    flex: 0.7;
+}
+
+.organicFood_services_image {
+    position: relative;
+    flex: 1;
+    z-index: 10;
+    padding-left: 6rem;
+}
+
+.organicFood__services_title {
+    line-height: 1.25;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.organicFood__services_title-booble {
+    position: absolute;
+    left: -20px;
+    font-weight: bold;
+    background-color: #facc15;
+    color: black;
+    width: 46px;
+    height: 46px;
+    font-size: 20px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-xl */
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1150px) {
+    .organicFood__services_circle {
+        width: 900px;
+        height: 900px;
+        top: -200px;
+        right: -350px;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .organicFood__services_wrapper {
+        flex-direction: column-reverse;
+    }
+    .organicFood__services_circle {
+        width: 200%;
+        height: 200%;
+        top: -100%;
+        right: -50%;
+    }
+
+    .organicFood_services_image {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .organicFood__services_title {
+        font-size: 3rem;
+    }
+    .organicFood__services_title-booble {
+        left: -20px;
+        width: 35px;
+        height: 35px;
+        font-size: 15px;
+    }
+}
